@@ -33,6 +33,11 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
+                            <!-- This does not work -->
+                            <properties>
+                                <user.language>en</user.language>
+                                <user.country>US</user.country>
+                            </properties>
                             <generator>
                                 <database>
                                     <name>org.jooq.meta.extensions.ddl.DDLDatabase</name>
